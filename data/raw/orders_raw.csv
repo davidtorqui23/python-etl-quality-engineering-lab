@@ -1,0 +1,51 @@
+﻿order_id,customer_id,full_name,email,phone,order_date,country,amount,status,product_code
+1001,5001,Ana Gomez,ana.gomez1@example.test,3001000001,2026-01-05,Colombia,57.25,completed,PRD-100
+1002,5002,Carlos Lopez,carlos.lopez2@example.test,3001000002,2026-01-06,United States,64.60,pending,PRD-101
+1003,50A3,Laura Ramirez,laura.ramirez3@example.test,3001000003,2026-01-07,Mexico,71.95,cancelled,PRD-102
+1004,5004,Miguel Moreno,miguel.moreno4@example.test,3001000004,2026-01-08,Canada,79.30,shipped,PRD-103
+1005,5005,Sofia Martinez,sofia.martinez5@example.test,30010A0005,2026-01-09,Spain,86.65,completed,PRD-104
+1006,5006,Daniel Garcia,daniel.garcia6@example.test,3001000006,2026-01-10,Colombia,94.00,pending,PRD-100
+1007,5007,Valentina Diaz,laura.gomez7example.test,3001000007,2026-01-11,United States,101.35,cancelled,PRD-101
+1008,5008,Jorge Rodriguez,jorge.rodriguez8@example.test,3001000008,2026-01-12,Mexico,108.70,shipped,PRD-102
+1009,5009,Camila Hernandez,camila.hernandez9@example.test,3001000009,2026-13-09,Canada,116.05,completed,PRD-103
+1010,5010,Andres Torres,andres.torres10@example.test,3001000010,2026-01-14,Spain,123.40,pending,PRD-104
+1011,5011,Ana Gomez,ana.gomez11@example.test,3001000011,2026-01-15,CO,130.75,cancelled,PRD-100
+1012,5012,Carlos Lopez,carlos.lopez12@example.test,3001000012,2026-01-16,colombia ,138.10,shipped,PRD-101
+1013,5013,Laura Ramirez,laura.ramirez13@example.test,3001000013,2026-01-17,Mexico,145.45,completed,PRD-102
+1014,5014,Miguel Moreno,miguel.moreno14@example.test,3001000014,2026-01-18,Canada,-25.00,pending,PRD-103
+1015,5015,Sofia Martinez,sofia.martinez15@example.test,3001000015,2026-01-19,Spain,160.15,cancelled,PRD-104
+1016,5016,Daniel Garcia,daniel.garcia16@example.test,3001000016,2026-01-20,Colombia,0.00,shipped,PRD-100
+1017,5017,Valentina Diaz,valentina.diaz17@example.test,3001000017,2026-01-21,United States,174.85,completed,PRD-101
+1018,5018,Jorge Rodriguez,jorge.rodriguez18@example.test,3001000018,2026-01-22,Mexico,182.20,COMPLETED,PRD-102
+1019,5019,Camila Hernandez,camila.hernandez19@example.test,3001000019,2026-01-23,Canada,189.55,cancelled,PRD-103
+1020,5020,Andres Torres,andres.torres20@example.test,3001000020,2026-01-24,Spain,196.90,unknown,PRD-104
+1021,5021,Ana Gomez,ana.gomez21@example.test,3001000021,2026-01-25,Colombia,204.25,completed,PRD-100
+1021,5022,Carlos Lopez,carlos.lopez22@example.test,3001000022,2026-01-26,United States,211.60,pending,PRD-101
+1023,5023,Laura Ramirez,laura.ramirez23@example.test,3001000023,2026-01-27,Mexico,218.95,cancelled,PRD-102
+1024,,Miguel Moreno,miguel.moreno24@example.test,3001000024,2026-01-28,Canada,226.30,shipped,PRD-103
+1025,5025,Sofia Martinez,sofia.martinez25@example.test,3001000025,2026-01-29,Spain,233.65,completed,PRD-104
+1026,5026,  Sofia   Garcia  ,daniel.garcia26@example.test,3001000026,2026-01-30,Colombia,241.00,pending,PRD-100
+1027,5027,Valentina Diaz,valentina.diaz27@example.test,3001000027,2026-01-31,United States,248.35,cancelled,PRD-101
+1028,5028,Jorge Rodriguez,jorge.rodriguez28@example.test,30012345,2026-02-01,Mexico,255.70,shipped,PRD-102
+1029,5029,Camila Hernandez,camila.hernandez29@example.test,3001000029,2026-02-02,Canada,263.05,completed,PRD-103
+1030,5030,Andres Torres,andres.moreno30@,3001000030,2026-02-03,Spain,270.40,pending,PRD-104
+1031,5031,Ana Gomez,ana.gomez31@example.test,3001000031,2026-02-04,Colombia,277.75,cancelled,PRD-100
+1032,5032,Carlos Lopez,carlos.lopez32@example.test,3001000032,2026-02-05,United States,285.10,shipped,prd-102
+1033,5033,Laura Ramirez,laura.ramirez33@example.test,3001000033,2026-02-06,Mexico,292.45,completed,PRD-102
+1034,5034,Miguel Moreno,miguel.moreno34@example.test,3001000034,2026-02-07,Canada,299.80,pending,PRODUCT-XYZ
+1035,5035,Sofia Martinez,sofia.martinez35@example.test,3001000035,2026-02-08,Spain,307.15,cancelled,PRD-104
+1036,5036,Daniel Garcia,daniel.garcia36@example.test,3001000036,not-a-date,Colombia,314.50,shipped,PRD-100
+1037,5037,Valentina Diaz,valentina.diaz37@example.test,3001000037,2026-02-10,United States,321.85,completed,PRD-101
+1038,5038,Jorge Rodriguez,jorge.rodriguez38@example.test,3001000038,2026-02-11,Mexico,one hundred,pending,PRD-102
+1039,5039,Camila Hernandez,camila.hernandez39@example.test,3001000039,2026-02-12,Canada,336.55,cancelled,PRD-103
+1040,5040,Andres Torres,andres.torres40@example.test,3001000040,2026-02-13,USA,343.90,shipped,PRD-104
+1041,5041,Ana Gomez,ana.gomez41@example.test,3001000041,2026-02-14,Colombia,351.25,completed,PRD-100
+1042,5042,Carlos Lopez,carlos.lopez42@example.test,,2026-02-15,United States,358.60,pending,PRD-101
+1043,5043,Laura Ramirez,laura.ramirez43@example.test,3001000043,2026-02-16,Mexico,365.95,cancelled,PRD-102
+1044,5044,Miguel Moreno,CAMILA.DIAZ44@EXAMPLE.TEST,3001000044,2026-02-17,Canada,373.30,shipped,PRD-103
+1045,5045,Sofia Martinez,sofia.martinez45@example.test,3001000045,2026-02-18,Spain,380.65,completed,PRD-104
+1046,5046,Daniel Garcia,daniel.garcia46@example.test,3001000046,2026-02-19,Colombia,388.00,,PRD-100
+1047,5047,Valentina Diaz,valentina.diaz47@example.test,3001000047,2026-02-20,United States,395.35,cancelled,PRD-101
+ORD-1048,5048,Jorge Rodriguez,jorge.rodriguez48@example.test,3001000048,2026-02-21,Mexico,402.70,shipped,PRD-102
+1049,5049,Camila Hernandez,camila.hernandez49@example.test,3001000049,2026-02-22,Canada,410.05,completed,PRD-103
+1050, 5050 ,Andres Torres,andres.torres50@example.test,3001000050,2026-02-23,Spain,417.40,pending,PRD-104

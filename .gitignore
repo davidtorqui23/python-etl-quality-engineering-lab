@@ -1,0 +1,43 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+logs/*.log
+reports/pytest/
+reports/coverage/
+
+# IDE
+.vscode/
+
+# Generated data
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated databases
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Generated reports
+reports/*
+!reports/.gitkeep
+!reports/coverage/.gitkeep
+!reports/pytest/.gitkeep
+
+# Logs directory structure
+logs/*
+!logs/.gitkeep
+
+# Environment variables
+.env
+
+# Operating system
+.DS_Store
+Thumbs.db

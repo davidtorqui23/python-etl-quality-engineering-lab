@@ -1,0 +1,5 @@
+customer_id,email,phone
+1001,alice@example.com,3001000001
+1002,broken-email,3001000002
+1003,carol@example.com,invalid-phone
+ABC,dan@example.com,3001000004

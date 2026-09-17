@@ -1,0 +1,4 @@
+order_id,customer_id,full_name,email,phone,order_date,country,amount,status,product_code
+101,5001,Ana Gomez,ana@example.com,3001000001,2026-01-01,Colombia,10.0,completed,PRD-001
+102,BAD,Carlos Lopez,carlos@example.com,3001000002,2026-01-02,United States,15.0,completed,PRD-002
+103,5003,Laura Ramirez,laura@example.com,3001000003,2026-01-03,Colombia,20.0,completed,PRD-003

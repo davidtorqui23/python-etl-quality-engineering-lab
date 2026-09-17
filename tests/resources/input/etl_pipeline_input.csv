@@ -1,0 +1,5 @@
+order_id,customer_id,full_name,email,phone,order_date,country,amount,status,product_code
+1001,5001," Ana Gomez ",ana.gomez1@example.test,3001000001,2026-01-05,CO,57.25,completed,PRD-100
+1002,BAD," Carlos Lopez ",carlos.lopez2@example.test,3001000002,2026-01-06,USA,64.60,pending,PRD-101
+1003,5003,Laura Ramirez,laura.ramirez3@example.test,3001000003,2026-01-07,Mexico,71.95,cancelled,PRD-102
+1004,5004,Miguel Moreno,miguel.moreno4@example.test,3001000004,2026-01-08,Canada,79.30,shipped,PRD-103

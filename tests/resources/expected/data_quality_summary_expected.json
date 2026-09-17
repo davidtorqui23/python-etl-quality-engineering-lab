@@ -1,0 +1,8 @@
+{
+  "total_records": 4,
+  "valid_records": 1,
+  "invalid_records": 3,
+  "invalid_emails": 1,
+  "invalid_phone_numbers": 1,
+  "invalid_customer_ids": 1
+}

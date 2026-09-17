@@ -1,0 +1,682 @@
+# Execution Log
+
+---
+
+## US-001
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Artifacts Created:
+
+- US-001 Story
+- Load Orders Dataset Feature
+- TD-US-001
+- SC-US-001
+- TM-US-001
+- ID-US-001
+
+Implementation:
+
+- src/extract/extract_orders.py
+
+Tests:
+
+- tests/test_extract_orders.py
+
+Execution Results:
+
+- 5 tests passed
+
+Issues Found:
+
+- Missing traceability process
+- Missing step catalog process
+
+Issues Resolved:
+
+- Step Catalog introduced
+- Traceability Matrix introduced
+
+Review Outcome:
+
+- Approved
+
+---
+
+## US-002
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Artifacts Created:
+
+- US-002 Story
+- validate_dataset_structure.feature
+- TD-US-002
+- SC-US-002
+- TM-US-002
+- ID-US-002
+
+Implementation:
+
+- schema validator
+
+Tests:
+
+- test_validate_dataset_structure.py
+
+Execution Results:
+
+- 9 tests passed
+
+Issues Found:
+
+- Backlog governance issue
+- Duplicate story rows allowed
+
+Issues Resolved:
+
+- Unique backlog governance added
+
+Review Outcome:
+
+- Approved
+
+---
+
+## US-003
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-003
+
+Story Title:
+Validate Customer ID Quality
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-003 Story
+- validate_customer_id_quality.feature
+- TD-US-003
+- SC-US-003
+- TM-US-003
+- ID-US-003
+
+Files Created:
+
+- docs/stories/us-003-validate-customer-id-quality.md
+- tests/features/validate_customer_id_quality.feature
+- docs/test-designs/TD-US-003_Validate_Customer_ID_Quality.md
+- docs/steps/SC-US-003.md
+- docs/traceability/TM-US-003.md
+- docs/implementation-designs/ID-US-003_Validate_Customer_ID_Quality.md
+- src/validation/customer_id_validator.py
+- src/validation/__init__.py
+- tests/test_validate_customer_id_quality.py
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+
+Tests Added:
+
+- tests/test_validate_customer_id_quality.py
+
+Total Passing Tests:
+
+- 13 passed in 0.93s
+
+Issues Found:
+
+- Missing customer ID quality validation module
+- Initial invalid test assignments used integer-typed pandas columns, causing dtype assignment errors
+
+Issues Resolved:
+
+- Implemented CustomerIDValidator with column presence, blank detection, and numeric validation logic
+- Updated invalid test fixtures to use object-typed columns to simulate realistic malformed customer IDs
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-004
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-004
+
+Story Title:
+Validate Email Quality
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-004 Story
+- validate_email_quality.feature
+- TD-US-004
+- SC-US-004
+- TM-US-004
+- ID-US-004
+
+Files Created:
+
+- docs/stories/us-004-validate-email-quality.md
+- tests/features/validate_email_quality.feature
+- docs/test-designs/TD-US-004_Validate_Email_Quality.md
+- docs/steps/SC-US-004.md
+- docs/traceability/TM-US-004.md
+- docs/implementation-designs/ID-US-004_Validate_Email_Quality.md
+- src/validation/email_validator.py
+- src/validation/__init__.py
+- tests/test_validate_email_quality.py
+- docs/review-reports/RR-US-004-StepReview.md
+- docs/review-reports/RR-US-004-CodeReview.md
+- docs/review-reports/RR-US-004-DataQualityReview.md
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/validation/__init__.py
+
+Tests Added:
+
+- tests/test_validate_email_quality.py
+
+Total Passing Tests:
+
+- 17 passed in 1.01s
+
+Issues Found:
+
+- Missing email quality validation module
+- Initial implementation had no pattern enforcement for malformed email strings
+
+Issues Resolved:
+
+- Implemented EmailValidator with required column check, blank handling, and regex-based email validation
+- Added structured message output and invalid row tracking
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-005
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-005
+
+Story Title:
+Validate Phone Number Quality
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-005 Story
+- validate_phone_number_quality.feature
+- TD-US-005
+- SC-US-005
+- TM-US-005
+- ID-US-005
+
+Files Created:
+
+- docs/stories/us-005-validate-phone-number-quality.md
+- tests/features/validate_phone_number_quality.feature
+- docs/test-designs/TD-US-005_Validate_Phone_Number_Quality.md
+- docs/steps/SC-US-005.md
+- docs/traceability/TM-US-005.md
+- docs/implementation-designs/ID-US-005_Validate_Phone_Number_Quality.md
+- src/validation/phone_validator.py
+- src/validation/__init__.py
+- tests/test_validate_phone_number_quality.py
+- docs/review-reports/RR-US-005-StepReview.md
+- docs/review-reports/RR-US-005-CodeReview.md
+- docs/review-reports/RR-US-005-DataQualityReview.md
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/validation/__init__.py
+
+Tests Added:
+
+- tests/test_validate_phone_number_quality.py
+
+Total Passing Tests:
+
+- 21 passed in 1.04s
+
+Issues Found:
+
+- Missing phone quality validation module
+- TDD red-check initially failed because the module was not yet implemented
+
+Issues Resolved:
+
+- Implemented PhoneValidator with required column check, blank handling, and numeric phone pattern validation
+- Added structured result output and invalid-row reporting for malformed contact data
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-TECH-001
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-TECH-001
+
+Story Title:
+Implement Test Reporting And Logging
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-TECH-001 Story
+- test_reporting_and_logging.feature
+- TD-US-TECH-001
+- SC-US-TECH-001
+- TM-US-TECH-001
+- ID-US-TECH-001
+
+Files Created:
+
+- docs/stories/us-tech-001-test-reporting-and-logging.md
+- tests/features/test_reporting_and_logging.feature
+- docs/test-designs/TD-US-TECH-001_Test_Reporting_And_Logging.md
+- docs/steps/SC-US-TECH-001.md
+- docs/traceability/TM-US-TECH-001.md
+- docs/implementation-designs/ID-US-TECH-001_Test_Reporting_And_Logging.md
+- src/reporting/reporting_manager.py
+- src/reporting/__init__.py
+- tests/test_reporting_manager.py
+- docs/review-reports/RR-US-TECH-001-StepReview.md
+- docs/review-reports/RR-US-TECH-001-CodeReview.md
+- docs/review-reports/RR-US-TECH-001-DataQualityReview.md
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/reporting/__init__.py
+
+Tests Added:
+
+- tests/test_reporting_manager.py
+
+Total Passing Tests:
+
+- 25 passed in 7.00s
+
+Issues Found:
+
+- Missing reporting module
+- Missing coverage dependency in the virtual environment
+
+Issues Resolved:
+
+- Implemented ReportingManager for directory creation, logging setup, and report generation
+- Installed coverage and pytest-cov to support code-coverage reporting in local and CI/CD execution
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-006
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-006
+
+Story Title:
+Normalize Customer Data
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-006 Story
+- normalize_customer_data transformation
+- tests/test_normalize_customer_data.py
+
+Files Created:
+
+- src/transform/normalize_customer_data.py
+- tests/test_normalize_customer_data.py
+- data/processed/orders_normalized.csv
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/common/logger.py
+
+Tests Added:
+
+- tests/test_normalize_customer_data.py
+
+Total Passing Tests:
+
+- 23 passed in 1.79s
+
+Issues Found:
+
+- Missing normalization transform for the ETL flow
+- Country and phone formatting required standardization for downstream consistency
+
+Issues Resolved:
+
+- Implemented customer normalization for trimming, lowercase email conversion, country mapping, and phone digit stripping
+- Added execution and validation logging for the normalization lifecycle
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-007
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-007
+
+Story Title:
+Generate Data Quality Summary
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-007 Story
+- generate_data_quality_summary.feature
+- TD-US-007
+- SC-US-007
+- TM-US-007
+- ID-US-007
+
+Files Created:
+
+- docs/stories/us-007-generate-data-quality-summary.md
+- tests/features/generate_data_quality_summary.feature
+- docs/test-designs/TD-US-007_Generate_Data_Quality_Summary.md
+- docs/steps/SC-US-007.md
+- docs/traceability/TM-US-007.md
+- docs/implementation-designs/ID-US-007_Generate_Data_Quality_Summary.md
+- src/common/data_quality_summary.py
+- tests/test_data_quality_summary.py
+- docs/review-reports/RR-US-007-StepReview.md
+- docs/review-reports/RR-US-007-CodeReview.md
+- docs/review-reports/RR-US-007-DataQualityReview.md
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/common/logger.py
+
+Tests Added:
+
+- tests/test_data_quality_summary.py
+
+Total Passing Tests:
+
+- 25 passed in 3.13s
+
+Issues Found:
+
+- Missing summary generation capability for pre-load quality reporting
+- Incorrect initial row-count logic produced invalid summary totals during the red-phase check
+
+Issues Resolved:
+
+- Implemented a reusable summary function in src/common/data_quality_summary.py
+- Corrected the record validation logic so valid/invalid counts reflect actual row-level quality results
+- Logged summary generation in English through the shared logger
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-008
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-008
+
+Story Title:
+Load Valid Records To SQLite
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-008 Story
+- load_valid_records_to_sqlite.feature
+- TD-US-008
+- SC-US-008
+- TM-US-008
+- ID-US-008
+
+Files Created:
+
+- docs/stories/us-008-load-valid-records-to-sqlite.md
+- tests/features/load_valid_records_to_sqlite.feature
+- docs/test-designs/TD-US-008_Load_Valid_Records_To_SQLite.md
+- docs/steps/SC-US-008.md
+- docs/traceability/TM-US-008.md
+- docs/implementation-designs/ID-US-008_Load_Valid_Records_To_SQLite.md
+- src/load/load_valid_orders.py
+- tests/test_load_valid_orders_to_sqlite.py
+- docs/review-reports/RR-US-008-StepReview.md
+- docs/review-reports/RR-US-008-CodeReview.md
+- docs/review-reports/RR-US-008-DataQualityReview.md
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+
+Tests Added:
+
+- tests/test_load_valid_orders_to_sqlite.py
+
+Total Passing Tests:
+
+- 25 passed in 1.78s
+
+Issues Found:
+
+- SQLite load process needed to filter invalid data before insertion
+- Load statistics needed to include both inserted and rejected row counts
+
+Issues Resolved:
+
+- Implemented row-level validation before database insertion
+- Cleared the orders table before loading the valid subset to preserve idempotent load behavior
+- Logged the start and completion of the load process in English using the shared logger
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
+
+---
+
+## US-009
+
+Date:
+2026-09-16
+
+Status:
+Done
+
+Story ID:
+US-009
+
+Story Title:
+Execute End-To-End ETL Pipeline
+
+Completion Status:
+Completed
+
+Artifacts Created:
+
+- US-009 Story
+- End-to-end ETL pipeline feature
+- TD-US-009
+- SC-US-009
+- TM-US-009
+- ID-US-009
+- src/load/etl_pipeline.py
+- tests/test_etl_pipeline.py
+- docs/review-reports/RR-US-009-StepReview.md
+- docs/review-reports/RR-US-009-CodeReview.md
+- docs/review-reports/RR-US-009-DataQualityReview.md
+
+Files Created:
+
+- docs/stories/us-009-execute-end-to-end-etl-pipeline.md
+- tests/features/execute_end_to_end_etl_pipeline.feature
+- docs/test-designs/TD-US-009_Execute_End_To_End_ETL_Pipeline.md
+- docs/steps/SC-US-009.md
+- docs/traceability/TM-US-009.md
+- docs/implementation-designs/ID-US-009_Execute_End_To_End_ETL_Pipeline.md
+- src/load/etl_pipeline.py
+- tests/test_etl_pipeline.py
+
+Files Modified:
+
+- docs/backlog/product-backlog.md
+- src/load/etl_pipeline.py
+
+Tests Added:
+
+- tests/test_etl_pipeline.py
+
+Total Passing Tests:
+
+- 29 passed in 1.95s
+
+Issues Found:
+
+- ETL pipeline summary did not represent rejected-row counts in the quality summary output
+- Initial regression run exposed the mismatch between validation results and summary reporting
+
+Issues Resolved:
+
+- Updated the pipeline to retain the invalid-row count in the summary while preserving the normalized valid-record view for downstream loading
+- Verified the end-to-end ETL flow through the project regression suite
+
+Review Outcomes:
+
+- Step Review: Approved
+- Code Review: Approved
+- Data Quality Review: Approved
+
+Final Story Status:
+
+- Done
